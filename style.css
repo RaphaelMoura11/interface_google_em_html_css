@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+
+body {
+    margin: 0 auto;
+}
+
+/* Barra de menus */
+nav {
+    width: 100%;
+    height: 48px;
+    margin: 0 auto;
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+    padding: 6px;
+}
+
+nav ul li {
+    font-size: 13px;
+}
+
+li {
+    padding: 10px;
+    list-style: none;
+}
+
+/* Logo Google*/
+section {
+    display: flex;
+    width: 100%;
+    height: 100px;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+section #logo {
+    display: flex;
+    width: 100%;
+    height: 100px;
+    margin: 0 auto;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+section #logo #gBlue1 {
+    position: relative;
+    border: 15px solid #4285F4;
+    border-radius: 50%;
+    background-color: #FFFFFF;
+    width: 60px;
+    height: 60px;
+    padding: 0;
+    top: 0px;
+    left: 0px;
+}
+
+section #logo #gBlue1::before {
+    content: "";
+    z-index: 100;
+    position: absolute;
+    top: 50%;
+    right: -10px;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 15px;
+    background: #4285F4;
+}
+
+section #logo #gBlue1::after {
+    content: "";
+    z-index: 101;
+    position: absolute;
+    border-top: 50px solid transparent;
+    border-right: 50px solid #FFFFFF;
+    top: -26px;
+    right: -15px;
+    width: 0;
+    height: 0;
+}
+
+/* O vermelho logo */
+section #logo #oRed {
+    position: relative;
+    border: 15px solid #DB4437;
+    border-radius: 50%;
+    background-color: #FFFFFF;
+    width: 30px;
+    height: 30px;
+    padding: 0px;
+    top: 15px;
+    left: 5px;
+}
+
+/* O amarelo logo */
+section #logo #oYellow {
+    position: relative;
+    border: 15px solid #F4B400;
+    border-radius: 50%;
+    background-color: #FFFFFF;
+    width: 30px;
+    height: 30px;
+    padding: 0px;
+    top: 15px;
+    left: 10px;
+}
+
+/* g minsculo azul logo*/
+section #logo #gBlue2 {
+    position: relative;
+    border: 15px solid #4285F4;
+    border-radius: 50%;
+    background-color: #FFFFFF;
+    width: 30px;
+    height: 30px;
+    padding: 0px;
+    top: 15px;
+    left: 15px;
+}
+
+section #logo #gBlue2::after {
+    content: "";
+    z-index: 100;
+    position: absolute;
+    background: #4285F4;
+    width: 15px;
+    height: 74px;
+    top: -15px;
+    left: 30px;
+}
+
+section #logo #gBlue2::before {
+    content: "";
+    z-index: 101;
+    position: absolute;
+    border-bottom: 15px solid #4285F4;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 15px solid transparent;
+    border-radius: 50px;
+    width: 40px;
+    height: 40px;
+    top: 0px;
+    left: -20px;
+}
+
+
+/* l verde logo*/
+section #logo #lGreen {
+    position: relative;
+    background-color: #0F9D58;
+    width: 15px;
+    height: 92px;
+    padding: 0;
+    top: 0px;
+    left: 20px;
+}
+
+/* E vermelho logo*/
+section #logo #eRed {
+    position: relative;
+    border: 15px solid #DB4437;
+    border-radius: 50%;
+    background-color: #FFFFFF;
+    width: 30px;
+    height: 30px;
+    padding: 0px;
+    top: 15px;
+    left: 25px;
+}
+
+section #logo #eRed::after {
+    content: "";
+    z-index: 101;
+    position: absolute;
+    border-top: 20px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right: 31px solid #FFFFFF;
+    top: 2px;
+    right: -15px;
+    width: 0;
+    height: 0;
+}
+
+section #logo #eRed::before {
+    content: "";
+    z-index: 100;
+    position: absolute;
+    top: 0px;
+    right: 2px;
+    transform: skew(-65deg);
+    width: 30px;
+    height: 30px;
+    background: #DB4437;
+    border-top-right-radius: 80%;
+    border-bottom-left-radius: 100%;
+}
+
+
+main {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 160px;
+    width: 100%;
+    padding: 20px 0px;
+}
+
+/* Barra de pesquisa e botões*/
+.search {
+    margin: 0 auto;
+    margin-top: 60px;
+    height: 240px;
+}
+
+input {
+    height: 41px;
+    width: 582px;
+    border-radius: 25px;
+    
+}
+
+button {
+    margin: 20px 4px;
+    padding: 0px 16px;
+    height: 50px;
+    width: 140px;
+    font-size: 14px;
+    background-color: rgb(237, 237, 237);
+    border: 1px solid rgb(205, 205, 205);
+    border-radius: 4px;
+}
+
+.googleEng {
+    display: flex;
+    height: 52px;
+    width: 100%;
+    margin: 0px 0px 24px;
+}
+
+.googleEng p {
+    font-size: 13px;
+    margin: 0 auto;
+}
+
+/* Rodapé*/
+footer {
+    display: flex;
+    flex-direction: column;
+}
+
+footer #pais {
+    background-color: rgb(234, 234, 234);
+    border-bottom: 2px solid rgb(214, 214, 214);
+    padding: 20px
+}
+footer .info {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(234, 234, 234);
+    padding: 10px;
+    margin:0 ;
+}
+
+footer .info li.configPag {
+    display: flex;
+    justify-items: flex-end;
+}

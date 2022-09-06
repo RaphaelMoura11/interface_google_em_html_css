@@ -1,0 +1,174 @@
+body {
+    margin: 0 auto;
+} 
+
+/* Logo Google*/
+section {
+    display: flex;
+    width: 100%;
+    height: 300px;
+}
+
+#logo {
+    display: flex;
+    width: 100%;
+    height: 200px;
+    margin: 0 auto;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+#gBlue1 {
+    position: relative;
+    border: 15px solid #4285F4;
+    border-radius: 50%;
+    background-color: #FFFFFF;
+    width: 80px;
+    height: 80px;
+    padding: 0;
+    top: 0px;
+    left: 0px;
+}
+
+#gBlue1::before {
+    content: "";
+    z-index: 100;
+    position: absolute;
+    top: 50%;
+    right: -10px;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 15px;
+    background: #4285F4;
+}
+
+#gBlue1::after {
+    content: "";
+    z-index: 101;
+    position: absolute;
+    border-top: 60px solid transparent;
+    border-right: 60px solid #fff;
+    top: -27px;
+    right: -20px;
+    width: 0;
+    height: 0;
+}
+
+/* O vermelho logo */
+#oRed {
+    position: relative;
+    border: 15px solid #DB4437;
+    border-radius: 50%;
+    background-color: #FFFFFF;
+    width: 40px;
+    height: 40px;
+    padding: 0px;
+    top: 20px;
+    left: 5px;
+}
+
+/* O amarelo logo */
+#oYellow {
+    position: relative;
+    border: 15px solid #F4B400;
+    border-radius: 50%;
+    background-color: #FFFFFF;
+    width: 40px;
+    height: 40px;
+    padding: 0px;
+    top: 20px;
+    left: 10px;
+}
+
+/* g minsculo azul logo*/
+#gBlue2 {
+    position: relative;
+    border: 15px solid #4285F4;
+    border-radius: 50%;
+    background-color: #FFFFFF;
+    width: 40px;
+    height: 40px;
+    padding: 0px;
+    top: 20px;
+    left: 15px;
+}
+
+#gBlue2::after {
+    content: "";
+    z-index: 100;
+    position: absolute;
+    background: #4285F4;
+    border-bottom-right-radius: 60%;
+    width: 15px;
+    height: 100px;
+    top: -15px;
+    left: 40px;
+}
+
+#gBlue2::before {
+    content: "";
+    z-index: 101;
+    position: absolute;
+    border-bottom: 15px solid #4285F4;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 15px solid transparent;
+    border-radius: 50px;
+    width: 40px;
+    height: 40px;
+    top: 25px;
+    left: -15px;
+}
+
+
+/* l verde logo*/
+#lGreen {
+    position: relative;
+    background-color: #0F9D58;
+    width: 15px;
+    height: 110px;
+    padding: 0;
+    top: 0px;
+    left: 20px;
+}
+
+/* E vermelho logo*/
+#eRed {
+    position: relative;
+    border: 15px solid #DB4437;
+    border-radius: 50%;
+    background-color: #FFFFFF;
+    width: 40px;
+    height: 40px;
+    padding: 0px;
+    top: 20px;
+    left: 25px;
+}
+
+#eRed::after {
+    content: "";
+    z-index: 101;
+    position: absolute;
+    border-top: 25px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-right: 40px solid rgb(255, 255, 255);
+    top: 2px;
+    right: -15px;
+    width: 0;
+    height: 0;
+}
+
+#eRed::before {
+    content: "";
+    z-index: 100;
+    position: absolute;
+    top: 0px;
+    right: 07px;
+    transform: skew(-65deg);
+    width: 30px;
+    height: 35px;
+    background: #DB4437;
+    border-top-right-radius: 80%;
+    border-bottom-left-radius: 100%;
+}
